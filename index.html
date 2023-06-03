@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit-Converter</title>
+  <style>
+    body{
+      background-color:#1019cda8;
+      color: black;
+      font-size: 40px;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <center>
+  <h2>Unit  Converter</h2>
+<p>Type a value in the Feet field to convert the value to Meters:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+<hr>
+<hr>
+<hr>
+<p>Type a value in the Feet field to convert the value to Inches:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter1(this.value)" onchange="LengthConverter1(this.value)">
+</p>
+<p>Inches: <span id="outputInches"></span></p>
+<hr>
+<hr>
+<hr>
+<p>Type a value in the Feet field to convert the value to cm:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter2(this.value)" onchange="LengthConverter2(this.value)">
+</p>
+<p>cm: <span id="outputcm"></span></p>
+<hr>
+<hr>
+<hr>
+<p>Type a value in the Feet field to convert the value to Kilometers:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter3(this.value)" onchange="LengthConverter3(this.value)">
+</p>
+<p>Kilometers: <span id="outputKilometers"></span></p>
+<hr>
+<hr>
+<hr>
+<p>Type a value in the cm field to convert the value to Meters:</p>
+
+<p>
+  <label>cm</label>
+  <input id="inputcm" type="number" placeholder="cm" oninput="LengthConverter4(this.value)" onchange="LengthConverter4(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+<hr>
+<hr>
+<hr>
+<p>Type a value in the Yards field to convert the value to Kilometers:</p>
+
+<p>
+  <label>Yards</label>
+  <input id="inputYards" type="number" placeholder="Yards" oninput="LengthConverter(this.value)" onchange="LengthConverter5(this.value)">
+</p>
+<p>Kilometers: <span id="outputKilometers"></span></p>
+<hr>
+<hr>
+<hr>
+<p>Type a value in the Kilometers field to convert the value to Meters:</p>
+<p>
+  <label>Kilometers</label>
+  <input id="inputKilometers" type="number" placeholder="Kilometers" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+</center>
+<script>
+ 
+  
+function LengthConverter(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+}
+function LengthConverter1(valNum) {
+  document.getElementById("outputInches").innerHTML=valNum*12;
+}
+function LengthConverter2(valNum) {
+  document.getElementById("outputcm").innerHTML=valNum/0.032808;
+}
+function LengthConverter3(valNum) {
+  document.getElementById("outputKilometers").innerHTML=valNum/3280.8;
+}
+function LengthConverter4(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/100;
+}
+function LengthConverter5(valNum) {
+  document.getElementById("outputKilometers").innerHTML=valNum/1093.6;
+}
+function LengthConverter6(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum*1000;
+}
+</script>
+
+</body>
+</html>
